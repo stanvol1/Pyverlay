@@ -13,13 +13,13 @@ class Overlay(App):
         super().__init__()
         self.unknown = Text("UNKNOWN", style = "red")
         self.players = []
-        self.log_file = ""
+        self.log_file = "/home/volkan/.minecraft/logs/blclient/minecraft/latest.log"
         self.word = "ONLINE:"
         self.api_key = ""
         self.urchin_api = ""
         self.cache = {}
         self.urchin_cache = {}
-        self.session = requests.Session()
+        self.session = requests.Session() 
 
     def compose(self):
         yield Header()
